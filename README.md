@@ -1,3 +1,3 @@
-![Logo](https://github.com/michote/Trackee/raw/master/asstes/icon_110.png "Logo") Trackee
+![Logo](https://raw.githubusercontent.com/michote/Trackee/master/assets/icon_96.png "Logo") Trackee
 ==========
 ENYOJS-App for BB10 to track some daily stuff
