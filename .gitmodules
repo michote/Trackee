@@ -1,0 +1,16 @@
+[submodule "enyo"]
+    path = enyo
+    url = ../../enyojs/enyo.git
+    ignore = all
+[submodule "lib/onyx"]
+    path = lib/onyx
+    url = ../../enyojs/onyx.git
+    ignore = all
+[submodule "lib/layout"]
+    path = lib/layout
+    url = ../../enyojs/layout.git
+    ignore = all
+[submodule "lib/g11n"]
+    path = lib/g11n
+    url = https://github.com/enyojs/g11n.git
+    ignore = all

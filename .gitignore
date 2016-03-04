@@ -1,0 +1,7 @@
+/release
+/build
+/deploy
+
+featured.png
+*.geany
+*.svg

@@ -1,0 +1,160 @@
+
+/* Onyx default variable definitions: */
+@import "../lib/onyx/css/onyx-variables.less";
+/* --------------------------------------- */
+
+/* Fonts */
+@onyx-font-size-small: 0.875rem;
+@onyx-font-size-medium: 1rem;
+@onyx-font-size-large: 1.25rem;
+
+/* Padding */
+@onyx-button-padding-lr: 1.125rem;
+@onyx-button-padding-tb: .375rem;
+@onyx-tabbutton-padding-lr: 2.125;
+@onyx-tabbutton-padding-tb: .5rem;
+
+/* Icon Sizes */
+@onyx-icon-size: 2.26rem;
+@onyx-togglebutton-border-radius: 1rem;
+
+@onyx-input-focused-background: rgba(255,255,255,.1);
+@onyx-groupbox-border-radius: .375rem;
+@onyx-groupbox-background: rgba(255,255,255,.4);
+@onyx-progressbar-border-radius: .625rem;
+@onyx-progressbar-background: rgba(255,255,255,.5);
+@onyx-progressbar-bar-background: rgba(0,0,0,.5);
+@onyx-groupbox-header-font-size: 1.125rem;
+@onyx-input-font-size: 1.125rem;
+
+/* --------------------------------------- */
+/* Onyx rule definitions: */
+@import "../lib/onyx/css/onyx-rules.less";
+/* --------------------------------------- */
+
+
+
+
+.onyx-icon, .onyx-icon-toggle {
+    background-size: cover;
+}
+
+.onyx-button {
+    padding: .625rem .25em;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: .1875rem solid #040404;
+    background: #252525;
+    color: #f7f7f7;
+}
+
+.onyx-button.active,
+.onyx-button.pressed,
+.onyx-button:active:hover:not([disabled])  {
+    background: @onyx-togglebutton-background;
+    border-radius: .25rem;
+    border: .1875rem solid #040404;
+    color: #070707;
+}
+
+.onyx-toolbar-inline > * {
+    margin: 0 .375rem 0;
+}
+
+.onyx-menu-item {
+    padding: .625rem;
+}
+
+/* ### Scrollbar ### */
+.enyo-thumb {
+    border-radius: .25rem;
+    background: #fff;
+    border: none;
+    opacity: 0.75;
+}
+
+.enyo-vthumb {
+    right: .125rem;
+    width: .25rem;
+}
+
+
+/* ProgressBar.css */
+.onyx-progress-bar {
+    margin: 1rem;
+    height: 1rem;
+    border: .125rem solid rgba(255,255,255,0);
+    border-radius: @onyx-progressbar-border-radius;
+    background: @onyx-progressbar-background;
+    background-size: auto 100%;
+}
+
+.onyx-progress-bar-bar {
+    height: 100%;
+    border-radius: @onyx-progressbar-border-radius;
+    background: @onyx-progressbar-bar-background;
+    background-size: auto 100%;
+}
+
+
+/* Popup.css */
+.onyx-popup {
+    font-size: @onyx-popup-font-size;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    color: #777777;
+    background: #FFFFFF;
+}
+
+/* Groupbox.css */
+.onyx-groupbox > * {
+    display: block;
+    border-color: #EEEEEE;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+    font-size: @onyx-groupbox-font-size;
+}
+
+.onyx-groupbox > *::selection {
+    background: #a8d1ff;
+}
+
+.onyx-groupbox > *:first-child {
+    border-radius: 0;
+    border-width: 0 0 .0625rem 0;
+}
+
+
+.onyx-groupbox-header {
+    padding: 1.25rem 1.25rem .125rem;
+    color: @onyx-groupbox-text-color;
+    font-size: @onyx-groupbox-header-font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-color: #EEEEEE;
+    border-width: 0 0 .0625rem 0;
+    background: none;
+}
+
+.onyx-groupbox .onyx-input-decorator {
+    display: block;
+}
+
+.onyx-groupbox > .onyx-input-decorator {
+    border-color: #aaaaaa;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.onyx-groupbox > .onyx-input-decorator:first-child {
+    border-width: 0;
+    border-radius: 0;
+}
+
+.enyo-unselectable::selection, .enyo-unselectable ::selection {
+    color: black !important;
+    background-color: #dcd427;
+}
